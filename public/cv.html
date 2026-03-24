@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vincas Linkevičius — CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent: #7c3aed;
+      --text: #1a1a2e;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --bg: #ffffff;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      color: var(--text);
+      background: #f3f4f6;
+      line-height: 1.5;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 14mm 16mm 14mm 16mm;
+      background: white;
+    }
+
+    /* ── HEADER ── */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--accent);
+      margin-bottom: 16px;
+    }
+
+    header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: var(--text);
+    }
+
+    header .title {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--accent);
+      margin-top: 3px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 3px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .contact-info a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    /* ── SECTIONS ── */
+    section {
+      margin-bottom: 14px;
+    }
+
+    section h2 {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 8px;
+      padding-bottom: 3px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* ── EXPERIENCE / EDUCATION ── */
+    .entry {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0 12px;
+      margin-bottom: 10px;
+    }
+
+    .entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .entry-company {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--accent);
+      margin-top: 1px;
+    }
+
+    .entry-period {
+      font-size: 11px;
+      color: var(--muted);
+      white-space: nowrap;
+      text-align: right;
+      padding-top: 2px;
+    }
+
+    .entry-desc {
+      grid-column: 1 / -1;
+      font-size: 12px;
+      color: #374151;
+      margin-top: 4px;
+      line-height: 1.6;
+    }
+
+    /* ── TAGS ── */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 6px;
+      grid-column: 1 / -1;
+    }
+
+    .tag {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--accent);
+      background: #f3f0ff;
+      border: 1px solid #ddd6fe;
+      border-radius: 4px;
+      padding: 1px 6px;
+    }
+
+    /* ── PROJECTS ── */
+    .project {
+      margin-bottom: 10px;
+    }
+
+    .project:last-child {
+      margin-bottom: 0;
+    }
+
+    .project-title {
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .project-desc {
+      font-size: 12px;
+      color: #374151;
+      margin-top: 3px;
+      line-height: 1.55;
+    }
+
+    /* ── DOWNLOAD BUTTON ── */
+    .toolbar {
+      width: 210mm;
+      margin: 20px auto 12px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .download-btn {
+      padding: 8px 20px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .download-btn:hover { background: #6d28d9; }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <button class="download-btn" onclick="downloadPDF()">
+      ↓ Download PDF
+    </button>
+  </div>
+
+  <div class="page" id="cv-page">
+
+    <!-- HEADER -->
+    <header>
+      <div>
+        <h1>Vincas Linkevičius</h1>
+        <div class="title">Software Engineer</div>
+      </div>
+      <div class="contact-info">
+        <a href="mailto:vincas.linkevicius@gmail.com">vincas.linkevicius@gmail.com</a>
+        <a href="https://github.com/VincasL" target="_blank">github.com/VincasL</a>
+        <a href="https://www.linkedin.com/in/vincas-linkevičius-02ba7a220/" target="_blank">linkedin.com/in/vincas-linkevičius</a>
+      </div>
+    </header>
+
+    <!-- SUMMARY -->
+    <section>
+      <h2>Summary</h2>
+      <p style="font-size: 12px; color: #374151; line-height: 1.6;">
+        Full-stack software engineer with 4 years of professional experience at Cognizant. Comfortable across the stack — React/TypeScript frontends, Node.js APIs, PostgreSQL, and AWS infrastructure. Lately drawn to mobile development, with hands-on experience in React Native and Flutter. Not actively job hunting, but open to the right opportunity — ideally a small or medium product company where the work feels close to home.
+      </p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section>
+      <h2>Experience</h2>
+
+      <div class="entry">
+        <div>
+          <div class="entry-title">Mid-Level Full-Stack Engineer</div>
+          <div class="entry-company">Cognizant</div>
+        </div>
+        <div class="entry-period">2023 – 2026</div>
+        <div class="entry-desc">
+          <strong>Enterprise Asset Management Platform (E-commerce)</strong> — Owned a complex cross-module integration end-to-end, built report generation with optimized SQL queries, and handled occasional infrastructure work.<br/>
+          <strong>API Modernization (Travel)</strong> — Migrated legacy JavaScript APIs to TypeScript with test coverage and CI/CD. Contributed to rewriting Python 2 modules to Python 3.
+        </div>
+        <div class="tags">
+          <span class="tag">React</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">AWS</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Kubernetes</span>
+          <span class="tag">Kafka</span>
+          <span class="tag">Terraform</span>
+          <span class="tag">Datadog</span>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div>
+          <div class="entry-title">Junior Software Engineer</div>
+          <div class="entry-company">Cognizant</div>
+        </div>
+        <div class="entry-period">2022 – 2023</div>
+        <div class="entry-desc">
+          <strong>Loan Management Platform (Finance)</strong> — Feature work on a .NET/Angular web app.<br/>
+          <strong>Enterprise Asset Management Platform (E-commerce)</strong> — Frontend feature development, migrated the upload portal from Material UI to an internal component library, and improved accessibility.
+        </div>
+        <div class="tags">
+          <span class="tag">.NET</span>
+          <span class="tag">Angular</span>
+          <span class="tag">React</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Accessibility</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section>
+      <h2>Education</h2>
+      <div class="entry">
+        <div>
+          <div class="entry-title">Bachelor of Software Engineering</div>
+          <div class="entry-company">Kaunas University of Technology (KTU)</div>
+        </div>
+        <div class="entry-period">2019 – 2024</div>
+        <div class="entry-desc">
+          Studied software design, algorithms, data structures, databases, security, testing, and Agile practices. Awarded the KTU Talent Scholarship in 2022 for academic performance. Thesis project: MindConnect — a mental health platform with mood tracking, therapist video scheduling, and real-time group chat.
+        </div>
+        <div class="tags">
+          <span class="tag">.NET</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">React</span>
+          <span class="tag">Angular</span>
+          <span class="tag">React Native</span>
+          <span class="tag">Flutter</span>
+          <span class="tag">Python</span>
+          <span class="tag">MySQL</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERSONAL PROJECTS -->
+    <section>
+      <h2>Personal Projects</h2>
+
+      <div class="project">
+        <div class="project-title">MindConnect</div>
+        <div class="project-desc">Mental health platform — mood tracker, therapist video scheduling, real-time group chat. Bachelor's thesis at KTU.</div>
+        <div class="tags" style="margin-top: 4px;">
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">WebSockets</span>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">MetaTune</div>
+        <div class="project-desc">Real-time music room app inspired by plug.dj — shared YouTube queue, room management and chat over WebSockets.</div>
+        <div class="tags" style="margin-top: 4px;">
+          <span class="tag">React Native</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">WebSockets</span>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    function downloadPDF() {
+      const element = document.getElementById('cv-page');
+      element.style.minHeight = 'unset';
+
+      const opt = {
+        margin: 0,
+        filename: 'vincas-linkevicius-cv.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, useCORS: true },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+      };
+
+      html2pdf().set(opt).from(element).save().then(() => {
+        element.style.minHeight = '';
+      });
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "defense": "Bachelor Defense",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Vincas Linkevičius",
+    "title": "Software Engineer",
+    "taglines": ["Building full-stack products", "Mobile development enthusiast", "4 years of production code", "From web to mobile"],
+    "cta_work": "View My Work",
+    "cta_cv": "Download CV"
+  },
+  "about": {
+    "title": "About Me",
+    "bio": "Full-stack software engineer with 4 years of professional experience at Cognizant. I've worked across the stack — React/TypeScript frontends, Node.js APIs, PostgreSQL, and AWS infrastructure. Lately I've been drawn to mobile: there's something satisfying about building an app and installing it straight on your phone. Looking to join a small or medium product company — Lithuanian products are a bonus, because building something I can see in my surroundings and meet the users of makes the work feel meaningful to me. I lean into AI tools as part of my workflow — I think knowing how to use them well is part of being a good engineer today. Outside of code, I'm a former street musician — these days I spend my time outdoors and taking care of my cat.",
+    "photo_alt": "Profile photo"
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "subtitle": "Technologies I work with"
+  },
+  "experience": {
+    "title": "Experience",
+    "professional": "Professional",
+    "university": "University",
+    "role1_title": "Mid-Level Full-Stack Engineer",
+    "role1_company": "Cognizant",
+    "role1_period": "2023 – 2026",
+    "role1_desc": "Took on increased ownership after promotion — owned a complex cross-module integration end-to-end, built report generation with optimized SQL queries, and handled occasional infrastructure work. Also modernized a suite of legacy JavaScript APIs (TypeScript migration, test coverage, CI/CD) and contributed to rewriting Python 2 modules to Python 3.",
+    "role2_title": "Junior Software Engineer",
+    "role2_company": "Cognizant",
+    "role2_period": "2022 – 2023",
+    "role2_desc": "Feature work on a .NET/Angular loan management web app. Joined a large-scale enterprise asset management platform — contributed to frontend feature development, migrated the upload portal from Material UI to an internal component library, and improved accessibility.",
+    "edu_degree": "Bachelor of Software Engineering",
+    "edu_school": "Kaunas University of Technology (KTU)",
+    "edu_period": "2019 – 2024",
+    "edu_desc": "Studied software design, algorithms, data structures, databases, security, testing, and Agile practices. Worked on real projects individually and in teams, covering everything from mobile apps to complex systems. Awarded the KTU Talent Scholarship in 2022 for academic performance. Graduated with MindConnect — a mental health platform featuring mood tracking, therapist video scheduling, and real-time group chat. The programme holds the Investors' Spotlight Quality Label for its relevance to industry needs."
+  },
+  "projects": {
+    "title": "Projects",
+    "bachelor_title": "MindConnect",
+    "bachelor_desc": "My bachelor's thesis project at KTU. I chose mental health as my theme because I was going through my own journey of self-understanding at the time — it felt more meaningful to build something real. Features a mood tracker and journal, video call scheduling with therapists, and real-time support group chat inspired by 7 Cups.",
+    "bachelor_tags": ["React", "Node.js", "PostgreSQL", "WebSockets"],
+    "project2_title": "MetaTune",
+    "project2_desc": "A real-time music room app — a spiritual successor to plug.dj. Users create rooms, join live sessions, and manage a shared YouTube music queue. Room management, chat, and queue sync all run over WebSockets.",
+    "project2_tags": ["React Native", "Node.js", "WebSockets", "Cross-Platform"],
+    "view_code": "View Code",
+    "live_demo": "Live Demo"
+  },
+  "defense": {
+    "title": "Bachelor Defense",
+    "subtitle": "Thesis Defense Presentation",
+    "desc": "Watch the recording of my bachelor's thesis defense presentation at Kaunas University of Technology. The presentation covers the full scope of MindConnect — a mental health platform featuring mood tracking, therapist scheduling, and real-time group support chat.",
+    "coming_soon": "Video coming soon"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Feel free to reach out through any of these channels",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  }
+}

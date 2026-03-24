@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "home": "Pradžia",
+    "about": "Apie mane",
+    "skills": "Įgūdžiai",
+    "experience": "Patirtis",
+    "projects": "Projektai",
+    "defense": "Baigiamasis darbas",
+    "contact": "Kontaktai"
+  },
+  "hero": {
+    "greeting": "Sveiki, aš",
+    "name": "Vincas Linkevičius",
+    "title": "Programinės įrangos inžinierius",
+    "taglines": [
+      "Kuriu full-stack produktus",
+      "Mobilių aplikacijų entuziastas",
+      "4 metai produkciniam kode",
+      "Nuo žiniatinklio iki mobiliųjų"
+    ],
+    "cta_work": "Mano darbai",
+    "cta_cv": "Atsisiųsti CV"
+  },
+  "about": {
+    "title": "Apie mane",
+    "bio": "Full-stack programų inžinierius su 4 metų profesine patirtimi Cognizant. Dirbu per visą technologijų eilutę — React/TypeScript sąsajos, Node.js API, PostgreSQL ir AWS infrastruktūra. Pastaruoju metu traukia mobilūs įrenginiai: yra kažkas ypatingo, kai gali įsidiegti savo sukurtą aplikaciją į telefoną. Ieškau mažos ar vidutinės įmonės — lietuviškas produktas būtų privalumas, nes kurti kažką, ką galiu matyti savo aplinkoje ir sutikti jo vartotojus, man suteikia darbui prasmę. Aktyviai naudoju AI įrankius savo darbo procese — manau, kad mokėjimas jais naudotis efektyviai yra neatsiejama gero inžinieriaus savybė šiandien. Ne darbo valandomis — buvęs gatvės muzikantas, dabar mėgstu laiko praleisti lauke ir rūpintis savo kate.",
+    "photo_alt": "Profilio nuotrauka"
+  },
+  "skills": {
+    "title": "Įgūdžiai ir technologijos",
+    "subtitle": "Technologijos, su kuriomis dirbu"
+  },
+  "experience": {
+    "title": "Patirtis",
+    "professional": "Profesinė",
+    "university": "Universitetas",
+    "role1_title": "Vidutinio lygio Full-Stack inžinierius",
+    "role1_company": "Cognizant",
+    "role1_period": "2023 – 2026",
+    "role1_desc": "Po paaukštinimo prisiėmiau daugiau atsakomybės — visiškai valdžiau sudėtingą tarpmodulinę integraciją, kūriau ataskaitų generavimą su optimizuotomis SQL užklausomis ir atlikau infrastruktūros darbus. Taip pat modernizavau legacy JavaScript API rinkinį (TypeScript migracija, testų aprėptis, CI/CD) ir prisidėjau prie Python 2 modulių perrašymo į Python 3.",
+    "role2_title": "Jaunesnysis programų inžinierius",
+    "role2_company": "Cognizant",
+    "role2_period": "2022 – 2023",
+    "role2_desc": "Funkcijų darbai .NET/Angular paskolų valdymo aplikacijoje. Prisijungiau prie didelės apimties įmonės turto valdymo platformos — dirbau prie frontend funkcijų kūrimo, migravau įkėlimo portalą iš Material UI į vidinę komponentų biblioteką ir gerinau prieinamumą.",
+    "edu_degree": "Programų inžinerijos bakalauras",
+    "edu_school": "Kauno technologijos universitetas (KTU)",
+    "edu_period": "2019 – 2024",
+    "edu_desc": "Studijavau programinės įrangos projektavimą, algoritmus, duomenų struktūras, duomenų bazes, saugumą, testavimą ir Agile metodikas. Dirbau su realiais projektais individualiai ir komandoje, apimant viską nuo mobilių aplikacijų iki sudėtingų sistemų. 2022 metais gavau KTU Talentų stipendiją už akademinius pasiekimus. Baigiau su MindConnect — psichinės sveikatos platforma su nuotaikos stebėjimu, terapeutų vaizdo skambučių planavimu ir realaus laiko grupių pokalbiais. Programa turi Investors' Spotlight kokybės ženklą už aktualumą verslo poreikiams."
+  },
+  "projects": {
+    "title": "Projektai",
+    "bachelor_title": "MindConnect",
+    "bachelor_desc": "Mano bakalauro baigiamasis darbas KTU. Pasirinkau psichinės sveikatos temą, nes tuo metu pats ėjau savęs pažinimo keliu — norėjau kurti kažką, kas turėtų tikrą prasmę. Turi nuotaikos sekimo ir dienoraščio funkciją, vaizdo skambučių planavimą su terapeutais ir realaus laiko palaikymo grupių pokalbius, įkvėptus 7 Cups.",
+    "bachelor_tags": ["React", "Node.js", "PostgreSQL", "WebSockets"],
+    "project2_title": "MetaTune",
+    "project2_desc": "Realaus laiko muzikos kambarių aplikacija — dvasinis plug.dj įpėdinis. Vartotojai kuria kambarius, prisijungia prie tiesioginių sesijų ir valdo bendrą YouTube muzikos eilę. Kambarių valdymas, pokalbiai ir eilės sinchronizavimas veikia per WebSockets.",
+    "project2_tags": ["React Native", "Node.js", "WebSockets", "Kelių platformų"],
+    "view_code": "Peržiūrėti kodą",
+    "live_demo": "Gyva demonstracija"
+  },
+  "defense": {
+    "title": "Bakalauro gynimas",
+    "subtitle": "Baigiamojo darbo gynimo pristatymas",
+    "desc": "Žiūrėkite mano bakalauro baigiamojo darbo gynimo pristatymo įrašą Kauno technologijos universitete. Pristatyme aprašomas visas MindConnect projekto mastas — psichinės sveikatos platforma su nuotaikos sekimu, terapeutų planavimu ir realaus laiko grupių palaikymo pokalbiais.",
+    "coming_soon": "Vaizdo įrašas netrukus"
+  },
+  "contact": {
+    "title": "Susisiekite",
+    "subtitle": "Galite susisiekti per bet kurį iš šių kanalų",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "El. paštas"
+  }
+}
