@@ -16,7 +16,7 @@ import {
 } from '@chakra-ui/react'
 import { motion, useInView } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import { FaGithub, FaExternalLinkAlt, FaCode, FaGraduationCap } from 'react-icons/fa'
+import { FaExternalLinkAlt, FaCode, FaGraduationCap } from 'react-icons/fa'
 
 const MotionBox = motion(Box)
 
@@ -81,7 +81,7 @@ function VideoPlaceholder() {
   )
 }
 
-function ProjectCard({ title, description, tags, videoUrl, githubUrl, demoUrl, badge, delay, isInView }) {
+function ProjectCard({ title, description, tags, videoUrl, localVideo, demoUrl, badge, delay, isInView }) {
   const { t } = useTranslation()
   const cardBg = useColorModeValue('white', 'gray.800')
   const borderColor = useColorModeValue('gray.200', 'gray.700')
@@ -117,6 +117,16 @@ function ProjectCard({ title, description, tags, videoUrl, githubUrl, demoUrl, b
                 style={{ borderRadius: 0 }}
               />
             </AspectRatio>
+          ) : localVideo ? (
+            <AspectRatio ratio={16 / 9}>
+              <video
+                src={localVideo}
+                controls
+                playsInline
+                muted
+                style={{ borderRadius: 0, objectFit: 'contain', width: '100%', height: '100%' }}
+              />
+            </AspectRatio>
           ) : (
             <AspectRatio ratio={16 / 9}>
               <VideoPlaceholder />
@@ -149,22 +159,6 @@ function ProjectCard({ title, description, tags, videoUrl, githubUrl, demoUrl, b
 
           {/* Buttons */}
           <HStack spacing={3} pt={2}>
-            <Button
-              as="a"
-              href={githubUrl || '#'}
-              target="_blank"
-              rel="noopener noreferrer"
-              size="sm"
-              leftIcon={<FaGithub />}
-              variant="outline"
-              borderRadius="full"
-              colorScheme="purple"
-              fontWeight="600"
-              _hover={{ transform: 'translateY(-2px)' }}
-              transition="all 0.2s"
-            >
-              {t('projects.view_code')}
-            </Button>
             {demoUrl && (
               <Button
                 as="a"
@@ -199,25 +193,22 @@ function Projects() {
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   const sectionBg = useColorModeValue('white', 'gray.950')
-  const bachelorTags = t('projects.bachelor_tags', { returnObjects: true })
-  const project2Tags = t('projects.project2_tags', { returnObjects: true })
 
   const projects = [
     {
       title: t('projects.bachelor_title'),
       description: t('projects.bachelor_desc'),
-      tags: Array.isArray(bachelorTags) ? bachelorTags : [],
+      tags: ['React', 'Node.js', 'PostgreSQL', 'WebSockets'],
       videoUrl: 'WDvBq-UmMFM',
-      githubUrl: 'https://github.com/VincasL',
       demoUrl: null,
       badge: null,
     },
     {
       title: t('projects.project2_title'),
       description: t('projects.project2_desc'),
-      tags: Array.isArray(project2Tags) ? project2Tags : [],
+      tags: ['React Native', 'Node.js', 'WebSockets', 'iOS', 'Android'],
       videoUrl: null,
-      githubUrl: 'https://github.com/VincasL',
+      localVideo: '/metatune-demo.mov',
       demoUrl: null,
     },
   ]

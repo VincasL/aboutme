@@ -13,59 +13,51 @@
     "name": "Vincas Linkevičius",
     "title": "Programinės įrangos inžinierius",
     "taglines": [
-      "Kuriu full-stack produktus",
+      "Kuriu full-stack projektus",
       "Mobilių aplikacijų entuziastas",
-      "4 metai produkciniam kode",
-      "Nuo žiniatinklio iki mobiliųjų"
+      "4 metai patirties produkciniam kode",
+      "Nuo WEB iki Mobile"
     ],
     "cta_work": "Mano darbai",
     "cta_cv": "Atsisiųsti CV"
   },
   "about": {
     "title": "Apie mane",
-    "bio": "Full-stack programų inžinierius su 4 metų profesine patirtimi Cognizant. Dirbu per visą technologijų eilutę — React/TypeScript sąsajos, Node.js API, PostgreSQL ir AWS infrastruktūra. Pastaruoju metu traukia mobilūs įrenginiai: yra kažkas ypatingo, kai gali įsidiegti savo sukurtą aplikaciją į telefoną. Ieškau mažos ar vidutinės įmonės — lietuviškas produktas būtų privalumas, nes kurti kažką, ką galiu matyti savo aplinkoje ir sutikti jo vartotojus, man suteikia darbui prasmę. Aktyviai naudoju AI įrankius savo darbo procese — manau, kad mokėjimas jais naudotis efektyviai yra neatsiejama gero inžinieriaus savybė šiandien. Ne darbo valandomis — buvęs gatvės muzikantas, dabar mėgstu laiko praleisti lauke ir rūpintis savo kate.",
+    "bio": "Full-stack programuotojas su 4 metų profesine patirtimi Cognizant. Dirbu su React/TypeScript, Node.js API, PostgreSQL ir AWS. Pastaruoju metu mane traukia darbas su mobiliomis aplikacijomis, nes galiu jas įsirašyti į savo telefoną ir \"pajausti\". Ieškau darbo, labiausiai patiktų vidutinio ar mažo dydžio įmonė — lietuviškas produktas būtų privalumas, nes kurti kažką, ką galiu matyti savo aplinkoje ar bendrauti su mano programinės įrangos naudotojais man suteikia darbui prasmę. Naudoju AI įrankius savo darbo procese — manau, kad mokėjimas jais naudotis efektyviai tampa vis svarbiau. Už darbo ribų — buvęs gatvės muzikantas, dabar mėgstu laiko praleisti lauke ir rūpintis savo kate.",
     "photo_alt": "Profilio nuotrauka"
   },
   "skills": {
-    "title": "Įgūdžiai ir technologijos",
+    "title": "Įgūdžiai",
     "subtitle": "Technologijos, su kuriomis dirbu"
   },
   "experience": {
     "title": "Patirtis",
     "professional": "Profesinė",
     "university": "Universitetas",
-    "role1_title": "Vidutinio lygio Full-Stack inžinierius",
+    "role1_title": "Mid Full-Stack inžinierius",
     "role1_company": "Cognizant",
     "role1_period": "2023 – 2026",
-    "role1_desc": "Po paaukštinimo prisiėmiau daugiau atsakomybės — visiškai valdžiau sudėtingą tarpmodulinę integraciją, kūriau ataskaitų generavimą su optimizuotomis SQL užklausomis ir atlikau infrastruktūros darbus. Taip pat modernizavau legacy JavaScript API rinkinį (TypeScript migracija, testų aprėptis, CI/CD) ir prisidėjau prie Python 2 modulių perrašymo į Python 3.",
-    "role2_title": "Jaunesnysis programų inžinierius",
+    "role1_desc": "Po metų buvau paaukštintas iki mid-inžinieriaus. Dirbau keliuose projektuose.\n\nDidelės apimties e-komercijos turto valdymo platformoje: prisidėjau prie didžiosios dalies naujo modulio funkcijų, valdžiau integraciją tarp modulių, palaikiau turinio įkėlimo ir apdorojimo srautus tiek vidiniams, tiek išoriniams naudotojams. Dirbau su React, Node, PostgreSQL, AWS, Terraform, GitHub Actions, Kafka ir Datadog.\n\nKitame PIM modulyje: padėjau išplėsti esamą sistemą naujam regionui — analizavau duomenų neatitikimus, kūriau ataskaitas ir prisidėjau prie funkcionalumo implementavimo.\n\nKelionių pramonės API modernizavimo projekte: prisidėjau prie AWS Lambda funkcijų migravimo iš JavaScript į TypeScript ir padengimo testais. Taip pat prisidėjau prie Python 2 PIM modulių perrašymo į Python 3 su CI/CD.",
+    "role2_title": "Jaunesnysis Full-Stack inžinierius",
     "role2_company": "Cognizant",
     "role2_period": "2022 – 2023",
-    "role2_desc": "Funkcijų darbai .NET/Angular paskolų valdymo aplikacijoje. Prisijungiau prie didelės apimties įmonės turto valdymo platformos — dirbau prie frontend funkcijų kūrimo, migravau įkėlimo portalą iš Material UI į vidinę komponentų biblioteką ir gerinau prieinamumą.",
+    "role2_desc": "Pradėjau Cognizant kaip jaunesnysis inžinierius ir dirbau dviejuose projektuose.\n\nFinansų paskolų valdymo platformoje: kūriau features su Angular ir .NET ir MySQL.\n\nE-komercijos turto valdymo platformoje: kūriau features, migravau nedidelę svetainę iš Material UI į vidinę komponentų biblioteką ir gerinau aplikacijos accessibilty.",
     "edu_degree": "Programų inžinerijos bakalauras",
     "edu_school": "Kauno technologijos universitetas (KTU)",
     "edu_period": "2019 – 2024",
-    "edu_desc": "Studijavau programinės įrangos projektavimą, algoritmus, duomenų struktūras, duomenų bazes, saugumą, testavimą ir Agile metodikas. Dirbau su realiais projektais individualiai ir komandoje, apimant viską nuo mobilių aplikacijų iki sudėtingų sistemų. 2022 metais gavau KTU Talentų stipendiją už akademinius pasiekimus. Baigiau su MindConnect — psichinės sveikatos platforma su nuotaikos stebėjimu, terapeutų vaizdo skambučių planavimu ir realaus laiko grupių pokalbiais. Programa turi Investors' Spotlight kokybės ženklą už aktualumą verslo poreikiams."
+    "edu_desc": "Studijavau programinės įrangos projektavimą, algoritmus, duomenų struktūras, duomenų bazes, saugumą, testavimą ir Agile metodikas. Dirbau su realiais projektais individualiai ir komandoje, apimant viską nuo mobilių aplikacijų iki sudėtingų sistemų. 2022 metais gavau KTU Talentų stipendiją už akademinius pasiekimus. Baigiau su MindConnect — psichinės sveikatos platforma su nuotaikos stebėjimu, terapeutų vaizdo skambučių planavimu ir realaus laiko grupių pokalbiais."
   },
   "projects": {
-    "title": "Projektai",
+    "title": "Asmeniniai projektai",
     "bachelor_title": "MindConnect",
-    "bachelor_desc": "Mano bakalauro baigiamasis darbas KTU. Pasirinkau psichinės sveikatos temą, nes tuo metu pats ėjau savęs pažinimo keliu — norėjau kurti kažką, kas turėtų tikrą prasmę. Turi nuotaikos sekimo ir dienoraščio funkciją, vaizdo skambučių planavimą su terapeutais ir realaus laiko palaikymo grupių pokalbius, įkvėptus 7 Cups.",
-    "bachelor_tags": ["React", "Node.js", "PostgreSQL", "WebSockets"],
+    "bachelor_desc": "Mano bakalauro baigiamasis darbas KTU. Pasirinkau psichinės sveikatos temą, nes tuo metu pats norėjau save geriau pažinti ir dirbti prie kažko, kas tuo metu man atrodė prasminga. Pagrindinės funkcijos: Dienoraštis, nuotaikų sekimas, terapeutų vizitų valdymas, video skambučiai ir chatinimas teminėse grupėse.",
     "project2_title": "MetaTune",
-    "project2_desc": "Realaus laiko muzikos kambarių aplikacija — dvasinis plug.dj įpėdinis. Vartotojai kuria kambarius, prisijungia prie tiesioginių sesijų ir valdo bendrą YouTube muzikos eilę. Kambarių valdymas, pokalbiai ir eilės sinchronizavimas veikia per WebSockets.",
-    "project2_tags": ["React Native", "Node.js", "WebSockets", "Kelių platformų"],
+    "project2_desc": "Realaus laiko muzikos kambarių aplikacija. Ši įdėja kilo, kai 2021 metais buvo nutrauktas plug.dj palaikymas. Vartotojai kuria kambarius, prisijungia prie tiesioginių sesijų ir valdo bendrą YouTube muzikos eilę. Kambarių valdymas, pokalbiai ir eilės sinchronizavimas veikia per WebSockets.",
     "view_code": "Peržiūrėti kodą",
     "live_demo": "Gyva demonstracija"
   },
-  "defense": {
-    "title": "Bakalauro gynimas",
-    "subtitle": "Baigiamojo darbo gynimo pristatymas",
-    "desc": "Žiūrėkite mano bakalauro baigiamojo darbo gynimo pristatymo įrašą Kauno technologijos universitete. Pristatyme aprašomas visas MindConnect projekto mastas — psichinės sveikatos platforma su nuotaikos sekimu, terapeutų planavimu ir realaus laiko grupių palaikymo pokalbiais.",
-    "coming_soon": "Vaizdo įrašas netrukus"
-  },
   "contact": {
-    "title": "Susisiekite",
+    "title": "Kontaktai",
     "subtitle": "Galite susisiekti per bet kurį iš šių kanalų",
     "github": "GitHub",
     "linkedin": "LinkedIn",

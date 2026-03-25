@@ -32,36 +32,28 @@
     "role1_title": "Mid-Level Full-Stack Engineer",
     "role1_company": "Cognizant",
     "role1_period": "2023 – 2026",
-    "role1_desc": "Took on increased ownership after promotion — owned a complex cross-module integration end-to-end, built report generation with optimized SQL queries, and handled occasional infrastructure work. Also modernized a suite of legacy JavaScript APIs (TypeScript migration, test coverage, CI/CD) and contributed to rewriting Python 2 modules to Python 3.",
+    "role1_desc": "Promoted to mid-level after one year. Worked across several projects.\n\nOn a large-scale e-commerce asset management platform: contributed to most of a new module's features, owned the integration between modules, and supported content upload and processing workflows for both internal users and external suppliers. Worked with React, Node, PostgreSQL, AWS, Terraform, GitHub Actions, Kafka, and Datadog.\n\nOn another PIM module: helped extend an existing system to support a new region — analyzed data discrepancies, built reports, and contributed to implementing the functionality.\n\nOn a travel industry API modernization: contributed to migrating AWS Lambda functions from JavaScript to TypeScript and adding test coverage. Also contributed to rewriting Python 2 PIM modules to Python 3 with CI/CD.",
     "role2_title": "Junior Software Engineer",
     "role2_company": "Cognizant",
     "role2_period": "2022 – 2023",
-    "role2_desc": "Feature work on a .NET/Angular loan management web app. Joined a large-scale enterprise asset management platform — contributed to frontend feature development, migrated the upload portal from Material UI to an internal component library, and improved accessibility.",
+    "role2_desc": "Started at Cognizant as a junior engineer across two projects.\n\nOn a finance loan management platform: built features with Angular, .NET and MySQL.\n\nOn the e-commerce asset management platform: built features, migrated the upload portal from Material UI to an internal component library, and improved accessibility.",
     "edu_degree": "Bachelor of Software Engineering",
     "edu_school": "Kaunas University of Technology (KTU)",
     "edu_period": "2019 – 2024",
-    "edu_desc": "Studied software design, algorithms, data structures, databases, security, testing, and Agile practices. Worked on real projects individually and in teams, covering everything from mobile apps to complex systems. Awarded the KTU Talent Scholarship in 2022 for academic performance. Graduated with MindConnect — a mental health platform featuring mood tracking, therapist video scheduling, and real-time group chat. The programme holds the Investors' Spotlight Quality Label for its relevance to industry needs."
+    "edu_desc": "Studied software design, algorithms, data structures, databases, security, testing, and Agile practices. Worked on real projects individually and in teams, covering everything from mobile apps to complex systems. Awarded the KTU Talent Scholarship in 2022 for academic performance. Graduated with MindConnect — a mental health platform featuring mood tracking, therapist video scheduling, and real-time group chat."
   },
   "projects": {
-    "title": "Projects",
+    "title": "Personal Projects",
     "bachelor_title": "MindConnect",
-    "bachelor_desc": "My bachelor's thesis project at KTU. I chose mental health as my theme because I was going through my own journey of self-understanding at the time — it felt more meaningful to build something real. Features a mood tracker and journal, video call scheduling with therapists, and real-time support group chat inspired by 7 Cups.",
-    "bachelor_tags": ["React", "Node.js", "PostgreSQL", "WebSockets"],
+    "bachelor_desc": "My bachelor's thesis project at KTU. I chose mental health as my theme because at the time I wanted to understand myself better and work on something that felt meaningful to me. Key features: journal, mood tracking, therapist appointment management, video calls, and group chat.",
     "project2_title": "MetaTune",
-    "project2_desc": "A real-time music room app — a spiritual successor to plug.dj. Users create rooms, join live sessions, and manage a shared YouTube music queue. Room management, chat, and queue sync all run over WebSockets.",
-    "project2_tags": ["React Native", "Node.js", "WebSockets", "Cross-Platform"],
+    "project2_desc": "A real-time music room app. The idea came when plug.dj was discontinued in 2021. Users create rooms, join live sessions, and manage a shared YouTube music queue. Room management, chat, and queue sync all run over WebSockets.",
     "view_code": "View Code",
     "live_demo": "Live Demo"
   },
-  "defense": {
-    "title": "Bachelor Defense",
-    "subtitle": "Thesis Defense Presentation",
-    "desc": "Watch the recording of my bachelor's thesis defense presentation at Kaunas University of Technology. The presentation covers the full scope of MindConnect — a mental health platform featuring mood tracking, therapist scheduling, and real-time group support chat.",
-    "coming_soon": "Video coming soon"
-  },
   "contact": {
     "title": "Get In Touch",
-    "subtitle": "Feel free to reach out through any of these channels",
+    "subtitle": "",
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "email": "Email"

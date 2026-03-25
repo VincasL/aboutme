@@ -123,9 +123,13 @@ function TimelineCard({ icon, title, company, period, description, tags = [], de
               </HStack>
             </HStack>
 
-            <Text fontSize="sm" color={descColor} lineHeight="1.8">
-              {description}
-            </Text>
+            <VStack align="flex-start" spacing={2}>
+              {description.split('\n\n').map((para, i) => (
+                <Text key={i} fontSize="sm" color={descColor} lineHeight="1.8">
+                  {para}
+                </Text>
+              ))}
+            </VStack>
             {tags.length > 0 && (
               <HStack spacing={2} flexWrap="wrap">
                 {tags.map((tag) => <TagChip key={tag} label={tag} />)}

@@ -85,7 +85,7 @@ function Navbar() {
       <Text
         px={3}
         py={2}
-        fontSize="sm"
+        fontSize="md"
         fontWeight={activeSection === item.to ? '700' : '500'}
         color={activeSection === item.to ? activeColor : textColor}
         position="relative"
@@ -133,14 +133,14 @@ function Navbar() {
           maxW="1200px"
           mx="auto"
           px={{ base: 4, md: 8 }}
-          py={4}
+          py={5}
           align="center"
           justify="space-between"
         >
           {/* Logo */}
           <ScrollLink to="home" smooth={true} duration={500} style={{ cursor: 'pointer' }}>
             <Text
-              fontSize={{ base: 'lg', md: 'xl' }}
+              fontSize={{ base: 'xl', md: '2xl' }}
               fontWeight="800"
               bgGradient={logoGradient}
               bgClip="text"

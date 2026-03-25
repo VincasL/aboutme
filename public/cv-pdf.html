@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Generating CV…</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent: #7c3aed;
+      --text: #1a1a2e;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      color: var(--text);
+      background: #f3f4f6;
+      line-height: 1.5;
+    }
+
+    #status {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-size: 15px;
+      color: var(--muted);
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Page div sized exactly for html2pdf capture */
+    .page {
+      width: 210mm;
+      margin: 0 auto;
+      padding: 0 16mm;
+      background: white;
+    }
+
+    /* ── HEADER ── */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--accent);
+      margin-bottom: 16px;
+    }
+
+    header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: var(--text);
+    }
+
+    header .title {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--accent);
+      margin-top: 3px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 3px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .contact-info a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    /* ── SECTIONS ── */
+    section {
+      margin-bottom: 14px;
+    }
+
+    section h2 {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 8px;
+      padding-bottom: 3px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* ── EXPERIENCE / EDUCATION ── */
+    .entry {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0 12px;
+      margin-bottom: 18px;
+      break-inside: avoid;
+    }
+
+    .entry:last-child { margin-bottom: 0; }
+
+    .entry-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .entry-company {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--accent);
+      margin-top: 1px;
+    }
+
+    .entry-period {
+      font-size: 11px;
+      color: var(--muted);
+      white-space: nowrap;
+      text-align: right;
+      padding-top: 2px;
+    }
+
+    .entry-desc {
+      grid-column: 1 / -1;
+      font-size: 12px;
+      color: #374151;
+      margin-top: 4px;
+      line-height: 1.6;
+    }
+
+    .entry-desc .project-block {
+      margin-bottom: 7px;
+      break-inside: avoid;
+    }
+
+    .entry-desc .project-block:last-child { margin-bottom: 0; }
+
+    /* ── TAGS ── */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 6px;
+      grid-column: 1 / -1;
+    }
+
+    .tag {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--accent);
+      background: #f3f0ff;
+      border: 1px solid #ddd6fe;
+      border-radius: 4px;
+      padding: 1px 6px;
+    }
+
+    /* ── PROJECTS ── */
+    .project {
+      margin-bottom: 10px;
+      break-inside: avoid;
+    }
+
+    .project:last-child { margin-bottom: 0; }
+
+    .project-title {
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .project-desc {
+      font-size: 12px;
+      color: #374151;
+      margin-top: 3px;
+      line-height: 1.55;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="status">Generating PDF…</div>
+
+  <div class="page" id="cv-page">
+
+    <header>
+      <div>
+        <h1>Vincas Linkevičius</h1>
+        <div class="title">Software Engineer</div>
+      </div>
+      <div class="contact-info">
+        <a href="mailto:vincas.linkevicius@gmail.com">vincas.linkevicius@gmail.com</a>
+        <a href="https://github.com/VincasL" target="_blank">github.com/VincasL</a>
+        <a href="https://www.linkedin.com/in/vincas-linkevi%C4%8Dius-02ba7a220/" target="_blank">linkedin.com/in/vincas-linkevičius</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p style="font-size: 12px; color: #374151; line-height: 1.6;">
+        Full-stack software engineer with 4 years of professional experience at Cognizant. Worked across the stack — React/TypeScript frontends, Node.js APIs, PostgreSQL, and AWS infrastructure. Lately drawn to mobile development, with hands-on experience in React Native and Flutter. Looking to join a small or medium product company — ideally a Lithuanian product, where the work feels meaningful and close to home. I use AI tools as part of my workflow and think knowing how to use them well is part of being a good engineer today.
+      </p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="entry">
+        <div>
+          <div class="entry-title">Mid-Level Full-Stack Engineer</div>
+          <div class="entry-company">Cognizant</div>
+        </div>
+        <div class="entry-period">2023 – 2026</div>
+        <div class="entry-desc">
+          <div class="project-block"><strong>E-commerce Asset Management Platform</strong> — Contributed to most of a new module's features, owned the integration between modules, and supported content upload and processing workflows for both internal users and external suppliers. Worked with React, Node, PostgreSQL, AWS, Terraform, GitHub Actions, Kafka, and Datadog.</div>
+          <div class="project-block"><strong>Multi-Region PIM Extension (E-commerce)</strong> — Extended an existing PIM system to support a new market. Led analysis of product data discrepancies between regions, built comprehensive discrepancy reporting, validated data quality, and contributed to designing a scalable multi-region data model. Worked on multi-region data ingestion, transformation, and synchronization, as well as implementing new integrations to meet regional business requirements.</div>
+          <div class="project-block"><strong>Travel Industry API Modernization</strong> — Contributed to a broad modernization effort across two workstreams. Migrated AWS Lambda functions from JavaScript to TypeScript, added unit test coverage, and supported scalable API development in a serverless AWS environment. Also contributed to rewriting legacy Python 2 PIM modules to Python 3 — refactored large modules into smaller maintainable components, removed deprecated code, implemented CI/CD pipelines, and assisted with database migrations.</div>
+          <div class="project-block"><strong>Retail Incident Management</strong> — Took ownership of a large backlog of unresolved production incidents for an assisted-selling system. Analyzed and categorized historical issues, identified duplicates and outdated reports, investigated root causes, and routed genuine defects to the appropriate product or engineering teams.</div>
+        </div>
+        <div class="tags">
+          <span class="tag">React</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">AWS</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Kubernetes</span>
+          <span class="tag">Kafka</span>
+          <span class="tag">Terraform</span>
+          <span class="tag">Datadog</span>
+          <span class="tag">AWS Lambda</span>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div>
+          <div class="entry-title">Junior Full-Stack Engineer</div>
+          <div class="entry-company">Cognizant</div>
+        </div>
+        <div class="entry-period">2022 – 2023</div>
+        <div class="entry-desc">
+          <div class="project-block"><strong>Finance Loan Management Platform</strong> — Built features with Angular, .NET and MySQL.</div>
+          <div class="project-block"><strong>E-commerce Asset Management Platform</strong> — Built features, migrated the upload portal from Material UI to an internal component library, and improved accessibility.</div>
+        </div>
+        <div class="tags">
+          <span class="tag">.NET</span>
+          <span class="tag">Angular</span>
+          <span class="tag">React</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Accessibility</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="entry">
+        <div>
+          <div class="entry-title">Bachelor of Software Engineering</div>
+          <div class="entry-company">Kaunas University of Technology (KTU)</div>
+        </div>
+        <div class="entry-period">2019 – 2024</div>
+        <div class="entry-desc">
+          Studied software design, algorithms, data structures, databases, security, testing, and Agile practices. Worked on real projects individually and in teams, covering everything from mobile apps to complex systems. Awarded the KTU Talent Scholarship in 2022 for academic performance. Graduated with MindConnect — a mental health platform featuring mood tracking, therapist video scheduling, and real-time group chat.
+        </div>
+        <div class="tags">
+          <span class="tag">.NET</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">React</span>
+          <span class="tag">Angular</span>
+          <span class="tag">React Native</span>
+          <span class="tag">Flutter</span>
+          <span class="tag">Python</span>
+          <span class="tag">MySQL</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Personal Projects</h2>
+
+      <div class="project">
+        <div class="project-title">MindConnect</div>
+        <div class="project-desc">My bachelor's thesis project at KTU. I chose mental health as my theme because at the time I wanted to understand myself better and work on something that felt meaningful to me. Key features: journal, mood tracking, therapist appointment management, video calls, and group chat.</div>
+        <div class="tags" style="margin-top: 4px;">
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">WebSockets</span>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">MetaTune</div>
+        <div class="project-desc">A real-time music room app. The idea came when plug.dj was discontinued in 2021. Users create rooms, join live sessions, and manage a shared YouTube music queue. Room management, chat, and queue sync all run over WebSockets.</div>
+        <div class="tags" style="margin-top: 4px;">
+          <span class="tag">React Native</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">WebSockets</span>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    window.addEventListener('load', function () {
+      const el = document.getElementById('cv-page');
+
+      const opt = {
+        margin: [14, 0, 14, 0],
+        filename: 'vincas-linkevicius-cv.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, useCORS: true },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+        pagebreak: { mode: ['avoid-all', 'css'] }
+      };
+
+      html2pdf().set(opt).from(el).save().then(() => {
+        window.close();
+      });
+    });
+  </script>
+
+</body>
+</html>

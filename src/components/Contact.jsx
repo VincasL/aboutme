@@ -101,13 +101,6 @@ function Contact() {
 
   const contacts = [
     {
-      icon: FaGithub,
-      label: t('contact.github'),
-      href: 'https://github.com/VincasL',
-      gradient: 'linear(to-br, gray.600, gray.800)',
-      hoverShadow: '0 20px 50px rgba(0,0,0,0.3)',
-    },
-    {
       icon: FaLinkedin,
       label: t('contact.linkedin'),
       href: 'https://www.linkedin.com/in/vincas-linkevi%C4%8Dius-02ba7a220/',
@@ -120,6 +113,13 @@ function Contact() {
       href: 'mailto:vincas.linkevicius@gmail.com',
       gradient: 'linear(to-br, purple.500, cyan.400)',
       hoverShadow: '0 20px 50px rgba(128, 0, 255, 0.3)',
+    },
+    {
+      icon: FaGithub,
+      label: t('contact.github'),
+      href: 'https://github.com/VincasL',
+      gradient: 'linear(to-br, gray.600, gray.800)',
+      hoverShadow: '0 20px 50px rgba(0,0,0,0.3)',
     },
   ]
 
@@ -190,9 +190,6 @@ function Contact() {
               borderRadius="full"
               mx="auto"
             />
-            <Text fontSize="lg" color={subtitleColor} maxW="500px">
-              {t('contact.subtitle')}
-            </Text>
           </VStack>
         </MotionBox>
 

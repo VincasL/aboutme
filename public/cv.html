@@ -7,7 +7,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -33,6 +32,12 @@
       margin: 0 auto;
       padding: 14mm 16mm 14mm 16mm;
       background: white;
+    }
+
+    @media print {
+      .page {
+        padding-bottom: 14mm;
+      }
     }
 
     /* ── HEADER ── */
@@ -94,7 +99,8 @@
       display: grid;
       grid-template-columns: 1fr auto;
       gap: 0 12px;
-      margin-bottom: 10px;
+      margin-bottom: 18px;
+      break-inside: avoid;
     }
 
     .entry:last-child {
@@ -130,6 +136,15 @@
       line-height: 1.6;
     }
 
+    .entry-desc .project-block {
+      margin-bottom: 7px;
+      break-inside: avoid;
+    }
+
+    .entry-desc .project-block:last-child {
+      margin-bottom: 0;
+    }
+
     /* ── TAGS ── */
     .tags {
       display: flex;
@@ -152,6 +167,7 @@
     /* ── PROJECTS ── */
     .project {
       margin-bottom: 10px;
+      break-inside: avoid;
     }
 
     .project:last-child {
@@ -199,7 +215,7 @@
 <body>
 
   <div class="toolbar">
-    <button class="download-btn" onclick="downloadPDF()">
+    <button class="download-btn" onclick="window.open('/cv-pdf.html', '_blank')">
       ↓ Download PDF
     </button>
   </div>
@@ -223,7 +239,7 @@
     <section>
       <h2>Summary</h2>
       <p style="font-size: 12px; color: #374151; line-height: 1.6;">
-        Full-stack software engineer with 4 years of professional experience at Cognizant. Comfortable across the stack — React/TypeScript frontends, Node.js APIs, PostgreSQL, and AWS infrastructure. Lately drawn to mobile development, with hands-on experience in React Native and Flutter. Not actively job hunting, but open to the right opportunity — ideally a small or medium product company where the work feels close to home.
+        Full-stack software engineer with 4 years of professional experience at Cognizant. Worked across the stack — React/TypeScript frontends, Node.js APIs, PostgreSQL, and AWS infrastructure. Lately drawn to mobile development, with hands-on experience in React Native and Flutter. Looking to join a small or medium product company — ideally a Lithuanian product, where the work feels meaningful and close to home. I use AI tools as part of my workflow and think knowing how to use them well is part of being a good engineer today.
       </p>
     </section>
 
@@ -238,8 +254,10 @@
         </div>
         <div class="entry-period">2023 – 2026</div>
         <div class="entry-desc">
-          <strong>Enterprise Asset Management Platform (E-commerce)</strong> — Owned a complex cross-module integration end-to-end, built report generation with optimized SQL queries, and handled occasional infrastructure work.<br/>
-          <strong>API Modernization (Travel)</strong> — Migrated legacy JavaScript APIs to TypeScript with test coverage and CI/CD. Contributed to rewriting Python 2 modules to Python 3.
+          <div class="project-block"><strong>E-commerce Asset Management Platform</strong> — Contributed to most of a new module's features, owned the integration between modules, and supported content upload and processing workflows for both internal users and external suppliers. Worked with React, Node, PostgreSQL, AWS, Terraform, GitHub Actions, Kafka, and Datadog.</div>
+          <div class="project-block"><strong>Multi-Region PIM Extension (E-commerce)</strong> — Extended an existing PIM system to support a new market. Led analysis of product data discrepancies between regions, built comprehensive discrepancy reporting, validated data quality, and contributed to designing a scalable multi-region data model. Worked on multi-region data ingestion, transformation, and synchronization, as well as implementing new integrations to meet regional business requirements.</div>
+          <div class="project-block"><strong>Travel Industry API Modernization</strong> — Contributed to a broad modernization effort across two workstreams. Migrated AWS Lambda functions from JavaScript to TypeScript, added unit test coverage, and supported scalable API development in a serverless AWS environment. Also contributed to rewriting legacy Python 2 PIM modules to Python 3 — refactored large modules into smaller maintainable components, removed deprecated code, implemented CI/CD pipelines, and assisted with database migrations.</div>
+          <div class="project-block"><strong>Retail Incident Management</strong> — Took ownership of a large backlog of unresolved production incidents for an assisted-selling system. Analyzed and categorized historical issues, identified duplicates and outdated reports, investigated root causes, and routed genuine defects to the appropriate product or engineering teams.</div>
         </div>
         <div class="tags">
           <span class="tag">React</span>
@@ -252,18 +270,19 @@
           <span class="tag">Kafka</span>
           <span class="tag">Terraform</span>
           <span class="tag">Datadog</span>
+          <span class="tag">AWS Lambda</span>
         </div>
       </div>
 
       <div class="entry">
         <div>
-          <div class="entry-title">Junior Software Engineer</div>
+          <div class="entry-title">Junior Full-Stack Engineer</div>
           <div class="entry-company">Cognizant</div>
         </div>
         <div class="entry-period">2022 – 2023</div>
         <div class="entry-desc">
-          <strong>Loan Management Platform (Finance)</strong> — Feature work on a .NET/Angular web app.<br/>
-          <strong>Enterprise Asset Management Platform (E-commerce)</strong> — Frontend feature development, migrated the upload portal from Material UI to an internal component library, and improved accessibility.
+          <div class="project-block"><strong>Finance Loan Management Platform</strong> — Built features with Angular, .NET and MySQL.</div>
+          <div class="project-block"><strong>E-commerce Asset Management Platform</strong> — Built features, migrated the upload portal from Material UI to an internal component library, and improved accessibility.</div>
         </div>
         <div class="tags">
           <span class="tag">.NET</span>
@@ -285,7 +304,7 @@
         </div>
         <div class="entry-period">2019 – 2024</div>
         <div class="entry-desc">
-          Studied software design, algorithms, data structures, databases, security, testing, and Agile practices. Awarded the KTU Talent Scholarship in 2022 for academic performance. Thesis project: MindConnect — a mental health platform with mood tracking, therapist video scheduling, and real-time group chat.
+          Studied software design, algorithms, data structures, databases, security, testing, and Agile practices. Worked on real projects individually and in teams, covering everything from mobile apps to complex systems. Awarded the KTU Talent Scholarship in 2022 for academic performance. Graduated with MindConnect — a mental health platform featuring mood tracking, therapist video scheduling, and real-time group chat.
         </div>
         <div class="tags">
           <span class="tag">.NET</span>
@@ -306,7 +325,7 @@
 
       <div class="project">
         <div class="project-title">MindConnect</div>
-        <div class="project-desc">Mental health platform — mood tracker, therapist video scheduling, real-time group chat. Bachelor's thesis at KTU.</div>
+        <div class="project-desc">My bachelor's thesis project at KTU. I chose mental health as my theme because at the time I wanted to understand myself better and work on something that felt meaningful to me. Key features: journal, mood tracking, therapist appointment management, video calls, and group chat.</div>
         <div class="tags" style="margin-top: 4px;">
           <span class="tag">React</span>
           <span class="tag">Node.js</span>
@@ -317,7 +336,7 @@
 
       <div class="project">
         <div class="project-title">MetaTune</div>
-        <div class="project-desc">Real-time music room app inspired by plug.dj — shared YouTube queue, room management and chat over WebSockets.</div>
+        <div class="project-desc">A real-time music room app. The idea came when plug.dj was discontinued in 2021. Users create rooms, join live sessions, and manage a shared YouTube music queue. Room management, chat, and queue sync all run over WebSockets.</div>
         <div class="tags" style="margin-top: 4px;">
           <span class="tag">React Native</span>
           <span class="tag">Node.js</span>
@@ -328,24 +347,6 @@
 
   </div>
 
-  <script>
-    function downloadPDF() {
-      const element = document.getElementById('cv-page');
-      element.style.minHeight = 'unset';
-
-      const opt = {
-        margin: 0,
-        filename: 'vincas-linkevicius-cv.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2, useCORS: true },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-      };
-
-      html2pdf().set(opt).from(element).save().then(() => {
-        element.style.minHeight = '';
-      });
-    }
-  </script>
 
 </body>
 </html>
