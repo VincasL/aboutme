@@ -221,7 +221,7 @@ function Hero() {
 
                 <Button
                   as="a"
-                  href="/cv.html"
+                  href={`${import.meta.env.BASE_URL}cv.html`}
                   target="_blank"
                   size="lg"
                   variant="outline"

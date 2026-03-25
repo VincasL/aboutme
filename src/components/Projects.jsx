@@ -208,7 +208,7 @@ function Projects() {
       description: t('projects.project2_desc'),
       tags: ['React Native', 'Node.js', 'WebSockets', 'iOS', 'Android'],
       videoUrl: null,
-      localVideo: '/metatune-demo.mov',
+      localVideo: `${import.meta.env.BASE_URL}metatune-demo.mov`,
       demoUrl: null,
     },
   ]
