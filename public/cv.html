@@ -231,9 +231,9 @@
 <body>
 
   <div class="toolbar">
-    <button class="download-btn" onclick="downloadCV()">
+    <a class="download-btn" href="./vincas-linkevicius-cv.pdf" download>
       ↓ Download PDF
-    </button>
+    </a>
   </div>
 
   <div class="page" id="cv-page">
@@ -363,16 +363,6 @@
 
   </div>
 
-  <script>
-    function downloadCV() {
-      const isMobile = window.innerWidth < 768;
-      if (isMobile) {
-        window.print();
-      } else {
-        window.open('./cv-pdf.html', '_blank');
-      }
-    }
-  </script>
 
 </body>
 </html>
