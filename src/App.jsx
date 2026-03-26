@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box } from '@chakra-ui/react'
+import { MotionConfig } from 'framer-motion'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -10,8 +11,11 @@ import Contact from './components/Contact'
 import ScrollProgress from './components/ScrollProgress'
 import BackToTop from './components/BackToTop'
 
+const isMobile = typeof window !== 'undefined' && window.innerWidth < 768
+
 function App() {
   return (
+    <MotionConfig reducedMotion={isMobile ? 'always' : 'never'}>
     <Box>
       <ScrollProgress />
       <Navbar />
@@ -37,6 +41,7 @@ function App() {
       </Box>
       <BackToTop />
     </Box>
+    </MotionConfig>
   )
 }
 
