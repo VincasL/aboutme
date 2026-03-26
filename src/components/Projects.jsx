@@ -81,7 +81,7 @@ function VideoPlaceholder() {
   )
 }
 
-function ProjectCard({ title, description, tags, videoUrl, localVideo, demoUrl, badge, delay, isInView }) {
+function ProjectCard({ title, description, tags, videoUrl, localVideo, demoUrl, badge }) {
   const { t } = useTranslation()
   const cardBg = useColorModeValue('white', 'gray.800')
   const borderColor = useColorModeValue('gray.200', 'gray.700')
@@ -291,8 +291,6 @@ function Projects() {
               <ProjectCard
                 key={project.title}
                 {...project}
-                delay={i * 0.15}
-                isInView={isInView}
               />
             ))}
           </SimpleGrid>

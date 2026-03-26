@@ -10,7 +10,6 @@ import {
 } from '@chakra-ui/react'
 import { motion, useInView } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import { FaUser } from 'react-icons/fa'
 import profilePhoto from '../assets/vincas-linkevicius.jpg'
 import { useRef } from 'react'
 

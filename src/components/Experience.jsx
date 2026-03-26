@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import {
   Box,
   Tabs,
@@ -15,7 +15,7 @@ import {
   useColorModeValue,
   Icon,
 } from '@chakra-ui/react'
-import { motion, useInView, AnimatePresence } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { FaBriefcase, FaGraduationCap, FaCalendarAlt, FaBuilding } from 'react-icons/fa'
 
@@ -49,7 +49,6 @@ function TimelineCard({ icon, title, company, period, description, tags = [], de
   const companyColor = useColorModeValue('purple.600', 'purple.300')
   const periodColor = useColorModeValue('gray.500', 'gray.400')
   const descColor = useColorModeValue('gray.600', 'gray.300')
-  const dotColor = useColorModeValue('purple.500', 'purple.400')
   const lineColor = useColorModeValue('gray.200', 'gray.700')
 
   return (

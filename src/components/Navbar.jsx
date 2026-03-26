@@ -16,7 +16,6 @@ import {
   DrawerCloseButton,
   useDisclosure,
   VStack,
-  useBreakpointValue,
 } from '@chakra-ui/react'
 import { Link as ScrollLink } from 'react-scroll'
 import { FaMoon, FaSun, FaBars } from 'react-icons/fa'
