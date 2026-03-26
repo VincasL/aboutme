@@ -12,13 +12,18 @@
     "greeting": "Hi, I'm",
     "name": "Vincas Linkevičius",
     "title": "Software Engineer",
-    "taglines": ["Building full-stack products", "Mobile development enthusiast", "4 years of production code", "From web to mobile"],
+    "taglines": [
+      "Building full-stack products",
+      "Mobile development enthusiast",
+      "4 years of production code",
+      "From web to mobile"
+    ],
     "cta_work": "View My Work",
     "cta_cv": "Download CV"
   },
   "about": {
     "title": "About Me",
-    "bio": "Full-stack software engineer with 4 years of professional experience at Cognizant. I've worked across the stack — React/TypeScript frontends, Node.js APIs, PostgreSQL, and AWS infrastructure. Lately I've been drawn to mobile: there's something satisfying about building an app and installing it straight on your phone. Looking to join a small or medium product company — Lithuanian products are a bonus, because building something I can see in my surroundings and meet the users of makes the work feel meaningful to me. I lean into AI tools as part of my workflow — I think knowing how to use them well is part of being a good engineer today. Outside of code, I'm a former street musician — these days I spend my time outdoors and taking care of my cat.",
+    "bio": "Full-stack software engineer with 4 years of professional experience at Cognizant. I've worked across the stack — React/TypeScript frontends, Node.js APIs, PostgreSQL, and AWS infrastructure. Lately I've been drawn to mobile development: there's something satisfying about building an app and installing it straight on your phone. Looking to join a small or medium product company — Lithuanian products are a bonus, because building something I can see in my surroundings and meet the users of makes the work feel meaningful to me. I lean into AI tools as part of my workflow — I think knowing how to use them well is part of being a good engineer today. Outside of code, I'm a former street musician — these days I spend my time outdoors and taking care of my cat.",
     "photo_alt": "Profile photo"
   },
   "skills": {
