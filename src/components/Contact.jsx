@@ -4,8 +4,6 @@ import {
   Text,
   Heading,
   VStack,
-  HStack,
-  Button,
   useColorModeValue,
   Icon,
   SimpleGrid,

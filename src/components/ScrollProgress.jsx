@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { Box, useColorModeValue } from '@chakra-ui/react'
+import { useEffect, useState } from 'react'
+import { Box } from '@chakra-ui/react'
 
 function ScrollProgress() {
   const [progress, setProgress] = useState(0)

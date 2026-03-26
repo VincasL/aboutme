@@ -1,4 +1,3 @@
-import React from 'react'
 import {
   Box,
   Flex,
@@ -6,7 +5,6 @@ import {
   Heading,
   VStack,
   useColorModeValue,
-  Icon,
 } from '@chakra-ui/react'
 import { motion, useInView } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
@@ -25,8 +23,6 @@ const sectionVariants = {
 }
 
 function SectionHeading({ title }) {
-  const lineColor = useColorModeValue('purple.500', 'purple.400')
-
   return (
     <VStack spacing={3} align={{ base: 'center', md: 'flex-start' }}>
       <Heading
@@ -54,11 +50,8 @@ function About() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
-  const photoBg = useColorModeValue('gray.100', 'gray.800')
   const photoBorder = useColorModeValue('purple.200', 'purple.800')
-  const iconColor = useColorModeValue('gray.400', 'gray.600')
   const textColor = useColorModeValue('gray.600', 'gray.300')
-  const cardBg = useColorModeValue('white', 'gray.800')
   const sectionBg = useColorModeValue('gray.50', 'gray.900')
 
   return (

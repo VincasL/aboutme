@@ -12,7 +12,6 @@ import {
   useColorModeValue,
   Icon,
   AspectRatio,
-  Flex,
 } from '@chakra-ui/react'
 import { motion, useInView } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
@@ -287,7 +286,7 @@ function Projects() {
           animate={isInView ? 'visible' : 'hidden'}
         >
           <SimpleGrid columns={{ base: 1, md: 2 }} spacing={8} maxW="900px" mx="auto">
-            {projects.map((project, i) => (
+            {projects.map((project) => (
               <ProjectCard
                 key={project.title}
                 {...project}

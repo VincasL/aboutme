@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import {
   Box,
-  Flex,
   Text,
   Heading,
   Button,
@@ -15,7 +14,6 @@ import { useTranslation } from 'react-i18next'
 import { FaDownload, FaArrowDown } from 'react-icons/fa'
 
 const MotionBox = motion(Box)
-const MotionText = motion(Text)
 
 function Hero() {
   const { t } = useTranslation()
@@ -24,7 +22,6 @@ function Hero() {
 
   const subtitleColor = useColorModeValue('purple.600', 'purple.300')
   const mutedColor = useColorModeValue('gray.600', 'gray.400')
-  const cardBg = useColorModeValue('whiteAlpha.600', 'whiteAlpha.50')
 
   useEffect(() => {
     const interval = setInterval(() => {
